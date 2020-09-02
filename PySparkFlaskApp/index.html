@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Welcome!</title>
+<style>
+    body {background-color:beige;
+        text-align:center}
+    h1   {color: darkblue;
+        font-family: verdana;
+        text-align:center}
+    textarea    {color:darkblue;
+        font-family: verdana;
+        background-color:cornsilk;
+        text-align:center
+        }
+         input[type=submit] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  width: 32em;  height: 4em;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: verdana;}
+        
+    </style>
+</head>
+<body>
+<form action="http://0.0.0.0:5000/welcome" method = "post">
+    <h1>TWITTER DATA ANALYSIS</h1>
+<textarea name="queryDef" cols="50" rows="5" >
+ENTER YOUR SPARK SQL QUERY HERE...
+</textarea>
+<br />
+<input type="submit" value="TWITTER SOURCE DATA" />
+</form>
+</body>
+</html>
